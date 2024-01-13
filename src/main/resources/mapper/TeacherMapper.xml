@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rxlxr.qxeducation.mapper.TeacherMapper">
+
+    <resultMap id="TeacherResultMap" type="com.rxlxr.qxeducation.bean.Teacher">
+        <id property="id" column="id" jdbcType="SMALLINT"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="gender" column="gender" jdbcType="VARCHAR"/>
+        <result property="age" column="age" jdbcType="SMALLINT"/>
+        <result property="year" column="year" jdbcType="SMALLINT"/>
+        <result property="ability" column="ability" jdbcType="VARCHAR"/>
+        <result property="qualification" column="qualification" jdbcType="VARCHAR"/>
+        <result property="salary" column="salary" jdbcType="DOUBLE"/>
+        <result property="subject" column="subject" jdbcType="VARCHAR"/>
+        <result property="region" column="region" jdbcType="VARCHAR"/>
+        <result property="image" column="image" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="teacher">
+        id,`name`,gender,
+        age,`year`,ability,
+        qualification,salary,subject,region,image
+    </sql>
+
+
+</mapper>
